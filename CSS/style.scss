@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.conteiner {
+    margin: 0 auto;
+    width: 960px;
+}
+
+// HEADER
+.header {
+    padding: 50px 0;
+    background-color: yellowgreen;
+
+    h1,
+    h2 {
+        color: greenyellow;
+        text-align: center;
+    }
+
+}
+
+// NAVIGATION
+.page-navigation {
+    background-color: #222;
+    border-color: #101010;
+    min-height: 64px;
+
+    li {
+        float: left;
+        width: 100px;
+    }
+
+    a {
+        display: block;
+        color: #9d9d9d;
+        line-height: 4em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    a:hover {
+        color: yellowgreen;
+        background-color: black;
+    }
+
+    .login {
+        padding: 15px 0;
+        float: right;
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 5px;
+            margin-right: 5px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            padding: 5px 15px;
+            border: 1px solid lightgreen;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkgrey;
+            color: white;
+        }
+    }
+}
