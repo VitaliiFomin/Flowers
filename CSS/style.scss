@@ -16,6 +16,11 @@ ul {
     }
 }
 
+p {
+    font-size: 13px;
+    line-height: 1.3em;
+}
+
 .conteiner {
     margin: 0 auto;
     width: 960px;
@@ -75,7 +80,6 @@ ul {
             padding: 5px 15px;
             border: 1px solid lightgreen;
             border-radius: 5px;
-            outline: none;
         }
 
         input[type="submit"]:hover {
@@ -83,4 +87,87 @@ ul {
             color: white;
         }
     }
+}
+
+// MAIN PART
+
+.collection-title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #777;
+    font-size: 36px;
+
+    small {
+        color: #777;
+        font-size: 70%;
+    }
+}
+
+.collections {
+    overflow: auto;
+
+    .collection-item-outer {
+        display: block;
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 33.33%;
+        box-sizing: border-box;
+
+        .collection-item {
+            border: 1px solid #959595;
+
+            img,
+            video {
+                width: 100%;
+            }
+
+            .collection-text {
+                padding: 0 20px 20px 20px;
+
+                h3 {
+                    color: yellowgreen;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                p {
+                    height: 70px;
+                    overflow: hidden;
+                }
+
+                button {
+                    padding: 10px;
+                    border: 1px solid transparent;
+                    border-radius: 5px;
+                    outline: none;
+                }
+
+                button:hover {
+                    background-color: darkgrey;
+                    color: white;
+                }
+
+            }
+        }
+    }
+}
+
+.collections>div:first-child {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.collections>div:last-child {
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+// FOOTER
+
+.footer {
+    background-color: yellowgreen;
+    color: white;
+    padding: 20px 0;
+    margin-top: 30px;
 }
